@@ -27,7 +27,16 @@ export default {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0px;
-  background-color: #e8ebf3
+  background-color: #e8ebf3;
 }
 
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
 </style>

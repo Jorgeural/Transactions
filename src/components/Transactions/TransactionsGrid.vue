@@ -1,27 +1,26 @@
 <template>
-  <div id="transactions-grid">
-    <table>
-       <thead>
-          <tr>
-            <th>Name</th>
-            <th>Brand</th>
-            <th>Last 4 digits</th>
-            <th>Transaction type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr v-for="(transaction, index) in transactions" :key="index">
-            <td>{{ transaction.card.holderName }}</td>
-            <td>{{ transaction.brandId }}</td>
-            <td>{{ 'XXXX ' + transaction.card.lastFourDigits }}</td>
-            <td>{{ transaction.action}}</td>
-            <td>{{ transaction.amount}}</td>
-            <td>{{ transaction.currencyCode }}</td>
-          </tr>
-       </tbody>
-    </table>
+  <div class="transactions-grid-container">
+    <!-- <pre> {{ transactions }}</pre> -->
+    <div class="table">
+      <!-- Table Header -->
+      <div class="table-row header">
+        <div class="col text-left">Name</div>
+        <div class="col text-left">Brand</div>
+        <div class="col text-center">Last 4 digits</div>
+        <div class="col text-left">Transaction type</div>
+        <div class="col text-right">Amount</div>
+        <div class="col text-left">Currency</div>
+      </div>
+      <!-- Table rows -->
+      <div class="table-row data" v-for="(transaction, index) in transactions" :key="index">
+        <div class="col text-left">{{ transaction.card.holderName }}</div>
+        <div class="col text-left">{{ transaction.brandId }}</div>
+        <div class="col text-center">{{ 'XXXX ' + transaction.card.lastFourDigits }}</div>
+        <div class="col text-left">{{ transaction.action}}</div>
+        <div class="col text-right">{{ transaction.amount}}</div>
+        <div class="col text-left">{{ transaction.currencyCode }}</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -35,12 +34,37 @@ export default {
 </script>
 
 <style>
-#transactions-grid {
-  margin: 20px;
-  background-color: #fff;
+.transactions-grid-container {
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: #f6f7fb;
 }
 
-th {
-  width: 20%;
+/* prueba */
+
+.table {
+  padding: 0 15px;
 }
+
+.header {
+  color: #213d8f;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+.data {
+  border-top: 1px solid #e8ebf3;
+}
+
+.table-row{
+  display: flex;
+}
+  .table-row > .col {
+    flex: 1;
+    padding: 1em 0.5em;
+  }
+
+  .table-row > .col:last-child {
+      flex: 0.5;
+  }
 </style>
