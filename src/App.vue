@@ -11,10 +11,10 @@ export default {
 </script>
 
 <style>
-#app {
+body {
   font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0px;
+  background-color: #e8ebf3
 }
+
 </style>
