@@ -12,13 +12,24 @@
         <div class="col text-left">Currency</div>
       </div>
       <!-- Table rows -->
-      <div class="table-row data" v-for="(transaction, index) in transactions" :key="index">
-        <div class="col text-left">{{ transaction.card.holderName }}</div>
-        <div class="col text-left">{{ transaction.brandId }}</div>
-        <div class="col text-center">{{ 'XXXX ' + transaction.card.lastFourDigits }}</div>
-        <div class="col text-left">{{ transaction.action}}</div>
-        <div class="col text-right">{{ transaction.amount}}</div>
-        <div class="col text-left">{{ transaction.currencyCode }}</div>
+      <div v-for="(transaction, index) in transactions" :key="index" >
+         <div class="table-row data" @click="openDetails(index)">
+          <div class="col text-left">{{ transaction.card.holderName }}</div>
+          <div class="col text-left">{{ transaction.brandId }}</div>
+          <div class="col text-center">{{ 'XXXX ' + transaction.card.lastFourDigits }}</div>
+          <div class="col text-left">{{ transaction.action}}</div>
+          <div class="col text-right">{{ transaction.amount}}</div>
+          <div class="col text-left">{{ transaction.currencyCode }}</div>
+        </div>
+        <div class="details">
+          <div class="table-row">
+            <div class="col">ID:</div>
+            <div class="col">{{transaction.id}}</div>
+            <div class="col">First 6 Digits:</div>
+            <div class="col">{{ transaction.card.firstSixDigits}}:</div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -28,7 +39,14 @@
 export default {
   props: ['transactions'],
   data () {
-    return {}
+    return {
+      expand: false
+    }
+  },
+  methods: {
+    openDetails (index) {
+      console.log(index)
+    }
   }
 }
 </script>
@@ -58,6 +76,7 @@ export default {
 
 .table-row{
   display: flex;
+  cursor: pointer;
 }
   .table-row > .col {
     flex: 1;
@@ -66,5 +85,9 @@ export default {
 
   .table-row > .col:last-child {
       flex: 0.5;
+  }
+
+  .details {
+    display: block;
   }
 </style>
