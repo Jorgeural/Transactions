@@ -11,9 +11,12 @@
         <div class="col text-right">Amount</div>
         <div class="col text-left">Currency</div>
       </div>
-      <!-- Table rows -->
-      <div v-for="(transaction, index) in transactions" :key="index" >
-         <div class="table-row data" @click="openDetails(index)">
+      <!-- Rows -->
+      <app-transactions-row
+       v-for="(transaction, index) in transactions"
+        :key="index">
+        <!-- Data Slot -->
+        <div slot="data" class="table-row data">
           <div class="col text-left">{{ transaction.card.holderName }}</div>
           <div class="col text-left">{{ transaction.brandId }}</div>
           <div class="col text-center">{{ 'XXXX ' + transaction.card.lastFourDigits }}</div>
@@ -21,31 +24,26 @@
           <div class="col text-right">{{ transaction.amount}}</div>
           <div class="col text-left">{{ transaction.currencyCode }}</div>
         </div>
-        <div class="details">
-          <div class="table-row">
-            <div class="col">ID:</div>
-            <div class="col">{{transaction.id}}</div>
-            <div class="col">First 6 Digits:</div>
-            <div class="col">{{ transaction.card.firstSixDigits}}:</div>
-
-          </div>
+        <!-- Details Slot -->
+        <div slot="details" class="details">
+          hola
         </div>
-      </div>
+      </app-transactions-row>
     </div>
   </div>
 </template>
 
 <script>
+import TransactionsRow from '@/components/Transactions/TransactionsRow'
+
 export default {
   props: ['transactions'],
+  components: {
+    appTransactionsRow: TransactionsRow
+  },
   data () {
     return {
       expand: false
-    }
-  },
-  methods: {
-    openDetails (index) {
-      console.log(index)
     }
   }
 }
@@ -55,14 +53,10 @@ export default {
 .transactions-grid-container {
   margin: 20px auto;
   max-width: 900px;
-  background-color: #f6f7fb;
+  background-color: #fff;
 }
 
 /* prueba */
-
-.table {
-  padding: 0 15px;
-}
 
 .header {
   color: #213d8f;
@@ -71,10 +65,11 @@ export default {
 }
 
 .data {
-  border-top: 1px solid #e8ebf3;
+  border-top: 1px solid #EAEDF4;
 }
 
-.table-row{
+.table-row {
+  padding: 0 15px;
   display: flex;
   cursor: pointer;
 }
@@ -87,7 +82,7 @@ export default {
       flex: 0.5;
   }
 
-  .details {
-    display: block;
-  }
+.details {
+  background-color: #F6F7FB
+}
 </style>

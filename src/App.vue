@@ -28,6 +28,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0px;
   background-color: #e8ebf3;
+  color: #4a4a4a;
 }
 
 .text-right {
