@@ -20,12 +20,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12);
 }
 
 .navigation-left {
   display: flex;
   justify-content: center;
-
 }
 
 .navigation-right {
@@ -53,6 +54,7 @@
   padding: 15px;
 }
 
+/* Media query for small devices */
 @media (max-width: 599px) {
   .navigation-left {
     min-width: 100%;

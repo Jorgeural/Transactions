@@ -1,5 +1,6 @@
-const store = {
-
+const state = {
+  transactions: [],
+  transactionsRequestError: ''
 }
 
-export default store
+export default state
