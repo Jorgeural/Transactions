@@ -1,16 +1,12 @@
 <template>
   <div class="transactions-container">
     <div class="transactions-filters">
-      <select name="typeFilter" v-model="typeFilter">
-          <option value="">All Types</option>
-          <option v-for="(type, index) in getTransactionsTypes" :key="index">{{ type }}</option>
-      </select>
-     <select name="currencyFilter" v-model="currencyFilter">
-          <option value="">All Currencies</option>
-          <option v-for="(currency, index) in getTransactionsCurrencies" :key="index">{{ currency }}</option>
-      </select>
-
-      <base-select-component></base-select-component>
+      <app-select-component :options="getTransactionsTypes" v-model="typeFilter">
+        <span slot="all-value-label"> All types</span>
+      </app-select-component>
+      <app-select-component :options="getTransactionsCurrencies" v-model="currencyFilter">
+        <span slot="all-value-label"> All currencies</span>
+      </app-select-component>
     </div>
     <div class="transactions-grid">
       <app-transactions-grid :transactions="getFilteredTransactions"></app-transactions-grid>
@@ -28,7 +24,8 @@ export default {
   data () {
     return {
       typeFilter: '',
-      currencyFilter: ''
+      currencyFilter: '',
+      typeFilter2: []
     }
   },
   computed: {
@@ -63,6 +60,8 @@ export default {
 
 .transactions-filters {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .transactions-grid {
@@ -73,6 +72,13 @@ export default {
 @media (max-width: 1199px) {
   .transactions-container {
     margin: 15px;
+  }
+}
+
+/* Media query for small devices */
+@media (max-width: 599px) {
+  .transactions-filters {
+   justify-content: space-around;
   }
 }
 </style>

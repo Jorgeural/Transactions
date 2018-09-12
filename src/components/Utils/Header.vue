@@ -38,7 +38,9 @@
 .navigation-right > a {
   padding: 10px 25px;
   text-decoration: none;
-  color: inherit;
+  color: #213d8f;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .navigation-right > a:hover {

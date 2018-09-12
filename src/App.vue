@@ -30,6 +30,7 @@ body {
   margin: 0px;
   background-color: #e8ebf3;
   color: #4a4a4a;
+  font-size: 14px;
 }
 
 .text-right {

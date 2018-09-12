@@ -3,7 +3,9 @@
     <div @click="expand = !expand">
       <slot name="data"></slot>
     </div>
-    <slot name="details" v-if="expand"></slot>
+    <transition name="accordion">
+        <slot name="details" v-if="expand"></slot>
+    </transition>
   </div>
 </template>
 
@@ -18,5 +20,17 @@ export default {
 </script>
 
 <style>
+.accordion-enter-active, .accordion-leave-active {
+  transition: all 0.3s;
+}
 
+.accordion-enter {
+  transform: translateY(-25px);
+  opacity: 0;
+}
+
+.accordion-leave-to {
+  transform: translateY(-25px);
+  opacity: 0;
+}
 </style>
