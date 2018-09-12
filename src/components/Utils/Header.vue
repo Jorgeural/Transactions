@@ -54,7 +54,7 @@
   padding: 15px;
 }
 
-/* Media query for small devices */
+/* Media query for phone devices */
 @media (max-width: 599px) {
   .navigation-left {
     min-width: 100%;
