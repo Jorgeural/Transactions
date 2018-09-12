@@ -20,17 +20,19 @@ export default {
 </script>
 
 <style>
+/* ANIMATIONs/TRANSITIONS */
 .accordion-enter-active, .accordion-leave-active {
-  transition: all 0.1s;
+  transition: all 0.15s;
 }
 
 .accordion-enter {
   transform: translateY(-25px);
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .accordion-leave-to {
   transform: translateY(-25px);
-  opacity: 0;
+  /* opacity: 0; */
 }
+
 </style>

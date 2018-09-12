@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <router-view/>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -41,5 +43,23 @@ body {
 }
 .text-center {
   text-align: center;
+}
+
+/* ANIMATIONs/TRANSITIONS */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 0.1s;
+}
+
+/* .fade-leave {
+
+} */
+
+.fade-leave-active {
+  transition: opacity 0.1s;
+  opacity: 0;
 }
 </style>
