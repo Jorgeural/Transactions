@@ -2,7 +2,7 @@
   <div class="select-style">
     <select :disabled="disabled" name="selected" v-model="selectedOption">
       <option value=""><slot name="all-value-label"></slot></option>
-      <option v-for="(item, index) in options" :key="index">{{ item }}</option>
+      <option v-for="(item, index) in options" :key="index" :value="item">{{ item | capitalize }}</option>
     </select>
   </div>
 </template>

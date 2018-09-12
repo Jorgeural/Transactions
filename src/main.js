@@ -10,6 +10,10 @@ Vue.config.productionTip = false
 
 Vue.component('app-select-component', SelectComponent)
 
+Vue.filter('capitalize', (value) => {
+  return value[0].toUpperCase() + value.substring(1)
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

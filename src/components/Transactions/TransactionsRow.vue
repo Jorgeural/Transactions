@@ -21,7 +21,7 @@ export default {
 
 <style>
 .accordion-enter-active, .accordion-leave-active {
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 .accordion-enter {
