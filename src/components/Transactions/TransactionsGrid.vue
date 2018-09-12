@@ -97,12 +97,6 @@ export default {
 </script>
 
 <style>
-.transactions-grid-container {
-  margin: 20px auto;
-  max-width: 1200px;
-  background-color: #fff;
-}
-
 .header-title {
   color: #213d8f;
   font-family: 'Source Sans Pro', sans-serif;
@@ -152,13 +146,6 @@ export default {
 }
 
 /* Media query for small devices */
-@media (max-width: 1199px) {
-  .transactions-grid-container {
-    margin: 15px;
-  }
-}
-
-/* Media query for small devices */
 @media (max-width: 599px) {
   .header {
     display: none;
@@ -190,7 +177,7 @@ export default {
 
   .transactions-wrapper {
     overflow-y: auto;
-    max-height: 75vh;
+    max-height: 72vh;
   }
 
   .transactions-wrapper::-webkit-scrollbar{
