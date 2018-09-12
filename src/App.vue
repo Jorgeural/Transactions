@@ -7,6 +7,7 @@
 
 <script>
 import Header from '@/components/Utils/Header.vue'
+
 import { mapActions } from 'vuex'
 
 export default {

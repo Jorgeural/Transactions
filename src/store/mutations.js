@@ -4,6 +4,12 @@ const mutations = {
   },
   setTransactionsRequestError: (state, payload) => {
     state.transactionsRequestError = payload
+  },
+  setTypeFilter: (state, payload) => {
+    state.selectedTypeFilter = payload
+  },
+  setCurrencyFilter: (state, payload) => {
+    state.selectedCurrencyFilter = payload
   }
 }
 

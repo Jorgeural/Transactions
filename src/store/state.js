@@ -1,6 +1,8 @@
 const state = {
   transactions: [],
-  transactionsRequestError: ''
+  transactionsRequestError: '',
+  selectedTypeFilter: '',
+  selectedCurrencyFilter: ''
 }
 
 export default state

@@ -4,14 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/store'
+import BaseSelectComponent from '@/components/FormComponents/BaseSelectComponent'
 
 Vue.config.productionTip = false
+
+Vue.component('base-select-component', BaseSelectComponent)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   store,
-  components: { App },
+  components: {App},
   template: '<App/>'
 })

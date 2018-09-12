@@ -20,6 +20,12 @@ const actions = {
         console.log(error)
         context.commit('setTransactionsRequestError', error.message)
       })
+  },
+  setTypeFilter: (context, payload) => {
+    context.commit('setTypeFilter', payload)
+  },
+  setCurrencyFilter: (context, payload) => {
+    context.commit('setCurrencyFilter', payload)
   }
 }
 
