@@ -54,7 +54,8 @@ export default {
 
 <style>
 .transactions-container {
-  margin: 20px auto;
+  margin: 0px auto;
+  padding: 15px;
   max-width: 1200px;
 }
 
@@ -66,13 +67,6 @@ export default {
 
 .transactions-grid {
   background-color: #fff;
-}
-
-/* Media query for large devices */
-@media (max-width: 1199px) {
-  .transactions-container {
-    margin: 15px;
-  }
 }
 
 /* Media query for small devices */
