@@ -1,4 +1,5 @@
 const getters = {
+  loading: state => state.loading,
   getTransactions: state => state.transactions,
   getTransactionsRequestError: state => state.transactionsRequestError,
   getFilteredTransactions: state => {
@@ -23,11 +24,6 @@ const getters = {
       }
     })
 
-    // Order depending on selection
-    // let key = state.selectedOrderBy.key
-    // filteredTransactions.sort((a, b) => {
-    //   return state.selectedOrderBy.order === 'desc' ? b[key] > a[key] : a[key] > b[key]
-    // })
     return filteredTransactions
   },
   getTransactionsTypes: state => {

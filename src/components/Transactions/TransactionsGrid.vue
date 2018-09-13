@@ -27,6 +27,10 @@
           <div class="col">Currency</div>
         </div>
       </div>
+
+      <!-- LOADING SPINNER -->
+      <app-spinner></app-spinner>
+
       <!-- Rows -->
       <div class="transactions-wrapper">
         <app-transactions-row
@@ -82,11 +86,13 @@
 
 <script>
 import TransactionsRow from '@/components/Transactions/TransactionsRow'
+import Spinner from '@/components/Utils/Spinner'
 
 export default {
   props: ['transactions'],
   components: {
-    appTransactionsRow: TransactionsRow
+    appTransactionsRow: TransactionsRow,
+    appSpinner: Spinner
   },
   data () {
     return {

@@ -1,15 +1,26 @@
 <template>
   <div class="transactions-container">
-    <div class="transactions-filters">
-      <app-select-component :options="getTransactionsTypes" v-model="typeFilter">
-        <span slot="all-value-label"> All types</span>
-      </app-select-component>
-      <app-select-component :options="getTransactionsCurrencies" v-model="currencyFilter">
-        <span slot="all-value-label"> All currencies</span>
-      </app-select-component>
+    <!-- Transactions grid -->
+    <div v-if="!getTransactionsRequestError">
+      <!-- Filters -->
+      <div class="transactions-filters">
+        <app-select-component :options="getTransactionsTypes" v-model="typeFilter">
+          <span slot="all-value-label"> All types</span>
+        </app-select-component>
+        <app-select-component :options="getTransactionsCurrencies" v-model="currencyFilter">
+          <span slot="all-value-label"> All currencies</span>
+        </app-select-component>
+      </div>
+      <!-- Grid -->
+      <div class="transactions-grid">
+        <app-transactions-grid :transactions="getFilteredTransactions"></app-transactions-grid>
+      </div>
     </div>
-    <div class="transactions-grid">
-      <app-transactions-grid :transactions="getFilteredTransactions"></app-transactions-grid>
+
+    <!-- Error msg -->
+    <div v-if="getTransactionsRequestError" class="text-center">
+      <h1>Ooops.</h1>
+      <h2>An error has ocurred, we are working to solve it as soon as posible.</h2>
     </div>
   </div>
 </template>

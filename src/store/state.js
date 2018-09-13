@@ -1,4 +1,5 @@
 const state = {
+  loading: false,
   transactions: [],
   transactionsRequestError: '',
   selectedTypeFilter: '',

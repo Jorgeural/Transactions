@@ -1,4 +1,7 @@
 const mutations = {
+  setLoading: (state, payload) => {
+    state.loading = payload
+  },
   setTransactions: (state, payload) => {
     state.transactions = payload
   },
