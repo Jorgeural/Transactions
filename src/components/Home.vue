@@ -41,19 +41,19 @@
         <p>
           <strong>VueJS</strong>
           <br>
-          <a href="https://vuejs.org/">Vue</a> is a javascript progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
+          <a href="https://vuejs.org/" target="_blank">Vue</a> is a javascript progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
           <br>
           <strong>Why Vue?</strong>
           <br>
             In terms of modern component-based javascript frameworks Vue is the "new kid on the block", compared with some of their "rivals" (Angular, React), vue it's quite easy to learn, has a detailed, comprehensive and extense documentation, it's flexible, allows two-way communication, in addition with libraries and tools such as :
             <br>
-            <a href="https://vuex.vuejs.org/">VueX:</a> A state management library that serves as a centralized store for all the components in an application
+            <a href="https://vuex.vuejs.org/" target="_blank">VueX:</a> A state management library that serves as a centralized store for all the components in an application
             <br>
-            <a href="https://router.vuejs.org/">Vue Router:</a> The official router for Vue. It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.
+            <a href="https://router.vuejs.org/" target="_blank">Vue Router:</a> The official router for Vue. It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.
             <br>
-            <a href="https://cli.vuejs.org/">Vue Cli:</a> Tool for rapid Vue.js development, offering scafolding and configurations for webpack, linter, babes, test tooling and much more.
+            <a href="https://cli.vuejs.org/" target="_blank">Vue Cli:</a> Tool for rapid Vue.js development, offering scafolding and configurations for webpack, linter, babes, test tooling and much more.
             <br>
-            <a href="https://github.com/axios/axios">Axios: </a> Promise based HTTP client for the browser and node.js.
+            <a href="https://github.com/axios/axios" target="_blank">Axios: </a> Promise based HTTP client for the browser and node.js.
             <br>
             And let's be honest, this is the framework i've been studying for the past months, so this is the best tool in my drawer.
          </p>
@@ -67,13 +67,13 @@
         <p>
           <strong>CSS3</strong>
           <br>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Cascading Style Sheets (CSS): </a>is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Cascading Style Sheets (CSS): </a>is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
           <br>
           <strong>Why PURE CSS?</strong>
           <br>
-          For this project I didn't want to use third party front end frameworks such as <a href="https://vuetifyjs.com/en/">Vuetify</a>, <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://materializecss.com/">Materialize</a> nor any other. Despite for my personal projects of course learning  y usually use them to quickstart the styles and focus on other topics.
+          For this project I didn't want to use third party front end frameworks such as <a href="https://vuetifyjs.com/en/" target="_blank">Vuetify</a>, <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="https://materializecss.com/" target="_blank">Materialize</a> nor any other. Despite for my personal projects of course learning  y usually use them to quickstart the styles and focus on other topics.
           <br>
-          I know that using any kind of CSS processor such as <a href="https://sass-lang.com/">SASS</a>, <a href="http://stylus-lang.com/"> Stylus</a> or <a href="http://lesscss.org/">LESS</a> would have been a +100, but i haven´t got enought experience nor knowledge of this tecnologies to feel confortable creating this project with them, of course this is in my to-do list, and i'm really impacient to start using these technologies.
+          I know that using any kind of CSS processor such as <a href="https://sass-lang.com/" target="_blank">SASS</a>, <a href="http://stylus-lang.com/" target="_blank"> Stylus</a> or <a href="http://lesscss.org/" target="_blank">LESS</a> would have been a +100, but i haven´t got enought experience nor knowledge of this tecnologies to feel confortable creating this project with them, of course this is in my to-do list, and i'm really impacient to start using these technologies.
           </p>
       </div>
     </div>
@@ -89,7 +89,7 @@
           <br>
           Simple animations and transitions done using CSS and Vue transition directive.
           <br>
-          All this code is able in a <a href="https://github.com/Jorgeural/Transactions">github</a> repository.
+          All this code is able in a <a href="https://github.com/Jorgeural/Transactions" target="_blank">github</a> repository.
           </p>
       </div>
     </div>
@@ -113,7 +113,7 @@
               <li>Create a web project where the user consume the transactions endpoint.</li>
               <li>The app should render the information from the transactions endpoint described below.</li>
               <li>Your code should be maintainable and extensible as possible.</li>
-              <li>Here you have the design that you have to apply. See our <a href="https://scene.zeplin.io/project/5aba58ec2ad5c9a98d97c76e">zeplin</a> page!</li>
+              <li>Here you have the design that you have to apply. See our <a href="https://scene.zeplin.io/project/5aba58ec2ad5c9a98d97c76e" target="_blank">zeplin</a> page!</li>
               <li>Responsive is mandatory.</li>
               <li>Use the technology that you consider more useful.</li>
               <li>Create a readme with the explanation of how to start the project.</li>
@@ -137,7 +137,11 @@
             nonetheless i didn't want to user pre-build front end components, so i stick with plain CSS for all the app, using Flexbox and media querys for responsive designs,
              and Vue's transition directive with simple CSS for animations and transitions.
             <br>
-            I use <a href="https://fontawesome.com/"> Fontaswesome </a>and <a href="https://fonts.google.com/"> Google Fonts</a> for icons, and fonts respectively.
+            Style for the grid following (with some changes) the <a href="https://scene.zeplin.io/project/5aba58ec2ad5c9a98d97c76e" target="_blank">zeplin</a>  designs provided.
+            <br>
+            Home styles according to <a href="https://www.payvision.com/es" target="_blank">payvision.com/</a>
+            <br>
+            I use <a href="https://fontawesome.com/" target="_blank"> Fontaswesome </a>and <a href="https://fonts.google.com/" target="_blank"> Google Fonts</a> for icons, and fonts respectively.
             <br>
             Filters are dynamic, options are mapped from the data received, so if you introduce a new  transaction with a new currency or type, you'll be able to filter it too.
             <br>
@@ -145,7 +149,7 @@
             <br>
             If an error occurs when requesting the info a console.log() will show the error.message and the user will see a "Ups, something went wrong screen".
             <br>
-            AJAX request to the endpoint is made using <a href="https://github.com/axios/axios">Axios</a>, I really want to focus on this, because <strong>my approach</strong> is to make <strong>a single asynchronous  request</strong>
+            AJAX request to the endpoint is made using <a href="https://github.com/axios/axios" target="_blank">Axios</a>, I really want to focus on this, because <strong>my approach</strong> is to make <strong>a single asynchronous  request</strong>
             to the server when the app first loads, all the transactions get loaded and stored in the Vuex store. and the treatment of the data (filters) relies on the front end, using the .filter() Javascript method.
           </p>
       </div>
@@ -266,6 +270,7 @@ a:hover {
 
 .section-container i {
   font-size: 100px;
+  color: #3fa8f4;
 }
 
 .avatar-wrapper {
