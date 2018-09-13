@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="column-center challenge-container">
+    <div class="column-center challenge-container bg-2">
       <h1>Frontend Software Engineer Challenge</h1>
       <h2>Rendering transactions</h2>
       <!-- <router-link tag="a" to="/transactions">Go to solution</router-link> -->
@@ -8,7 +8,7 @@
     <div class="column-center home-headline">
       <h1>CANDIDATE</h1>
     </div>
-    <div class="section-container candidate">
+    <div class="section-container bg-1">
       <div class="avatar-wrapper">
           <img src="@/assets/avatar.jpg" alt="Jorge Urosa Alonso" title="Jorge Urosa Alonso">
       </div>
@@ -28,7 +28,7 @@
     <div class="column-center home-headline">
       <h1>TECHNOLOGIES USED</h1>
     </div>
-    <div class="section-container">
+    <div class="section-container bg-2 ">
       <div class="avatar-wrapper">
         <i class="fab fa-vuejs"></i>
       </div>
@@ -54,7 +54,7 @@
          </p>
       </div>
     </div>
-    <div class="section-container">
+    <div class="section-container bg-1">
       <div class="avatar-wrapper">
         <i class="fab fa-css3-alt"></i>
       </div>
@@ -72,7 +72,7 @@
           </p>
       </div>
     </div>
-    <div class="section-container">
+    <div class="section-container bg-2">
       <div class="avatar-wrapper">
         <i class="fas fa-code"></i>
       </div>
@@ -103,6 +103,24 @@ export default {
 </script>
 
 <style>
+a {
+  color: #3fa8f4;
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bg-1 {
+  background-color: #f2f2f2;
+}
+
+.bg-2 {
+  background-color: #fff;
+}
+
 .column-center {
   display: flex;
   flex-direction: column;
@@ -112,7 +130,6 @@ export default {
 
 .challenge-container {
   color: #4a4a4a;
-  background-color: #fff;
   min-height: 20vh;
 }
 
@@ -137,10 +154,6 @@ export default {
 
 .section-container i {
   font-size: 100px;
-}
-
-.candidate {
-  background-color: #f2f2f2;
 }
 
 .avatar-wrapper {
