@@ -1,6 +1,7 @@
-# transactions
+# Frontend Software Engineer Challenge
+## Rendering transactions
 
-> Recruitment challenge
+Clone this repository in the desired destination. and follow the Build Setup Instructions
 
 ## Build Setup
 
