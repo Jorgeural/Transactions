@@ -13,7 +13,7 @@
       </div>
       <!-- Responsive table header -->
       <div class="table-row header-responsive-sm">
-        <div class="col text-center"> Payments Info</div>
+        <div class="col text-center"> Transactions Info</div>
       </div>
       <div class="table-row text-center header-title subheader-responsive-sm">
         <div class="table-column">
@@ -39,7 +39,7 @@
           <!-- Data Slot -->
           <div slot="data" class="table-row data">
             <div class="col">{{ transaction.card.holderName }}</div>
-            <div class="col">{{ transaction.brandId }}</div>
+            <div class="col">{{ transaction.brandName }}</div>
             <div class="col text-center">{{ 'XXXX ' + transaction.card.lastFourDigits }}</div>
             <div class="col">{{ transaction.action}}</div>
             <div class="col text-right">{{ transaction.amount}}</div>
@@ -143,6 +143,7 @@ export default {
 
 .details {
   background-color: #F6F7FB;
+  border-top: 1px solid #EAEDF4;
   font-size: 16px;
   padding: 0 25px;
 }
@@ -175,6 +176,10 @@ export default {
 
   .subheader-responsive-sm .col{
     padding: 5px 0;
+  }
+
+  .data {
+    border-top: 3px solid #EAEDF4;
   }
 
   .table-row > .col {

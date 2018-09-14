@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+import { brands } from '@/brandSpecifics.js'
 const actions = {
   fetchTransactions: async (context) => {
     context.commit('setLoading', true)
@@ -11,6 +11,12 @@ const actions = {
       })
       .then((response) => {
         if (response.status === 200) {
+          // Format amount
+          response.data.map(transaction => {
+            transaction.amount = transaction.amount.toFixed(2)
+            transaction.brandName = brands[transaction.brandId]
+          })
+          // Map brand
           context.commit('setTransactions', response.data)
         } else {
           context.commit('setTransactionsRequestError', response.statusText)

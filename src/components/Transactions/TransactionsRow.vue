@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="data-row">
     <div @click="expand = !expand">
       <slot name="data"></slot>
     </div>
@@ -22,7 +22,7 @@ export default {
 <style>
 /* ANIMATIONs/TRANSITIONS */
 .accordion-enter-active, .accordion-leave-active {
-  transition: all 0.15s;
+  transition: all 0.25s;
 }
 
 .accordion-enter {

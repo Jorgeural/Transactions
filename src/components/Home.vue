@@ -45,16 +45,13 @@
           <br>
           <strong>Why Vue?</strong>
           <br>
-            In terms of modern component-based javascript frameworks Vue is the "new kid on the block", compared with some of their "rivals" (Angular, React), vue it's quite easy to learn, has a detailed, comprehensive and extense documentation, it's flexible, allows two-way communication, in addition with libraries and tools such as :
-            <br>
-            <a href="https://vuex.vuejs.org/" target="_blank">VueX:</a> A state management library that serves as a centralized store for all the components in an application
-            <br>
-            <a href="https://router.vuejs.org/" target="_blank">Vue Router:</a> The official router for Vue. It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.
-            <br>
-            <a href="https://cli.vuejs.org/" target="_blank">Vue Cli:</a> Tool for rapid Vue.js development, offering scafolding and configurations for webpack, linter, babes, test tooling and much more.
-            <br>
-            <a href="https://github.com/axios/axios" target="_blank">Axios: </a> Promise based HTTP client for the browser and node.js.
-            <br>
+            In terms of modern component-based javascript frameworks Vue is the "new kid on the block", compared with some of their "rivals" (Angular, React), vue it's quite easy to learn, has a detailed, comprehensive and extense documentation, it's flexible and allows two-way communication. In addition with these libraries and tools that I have used, it becomes a really powerful choice.
+           <ul>
+              <li><a href="https://vuex.vuejs.org/" target="_blank">VueX:</a> A state management library that serves as a centralized store for all the components in an application.</li>
+              <li><a href="https://router.vuejs.org/" target="_blank">Vue Router:</a> The official router for Vue. It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.</li>
+              <li><a href="https://cli.vuejs.org/" target="_blank">Vue Cli:</a> Tool for rapid Vue.js development, offering scafolding and configurations for webpack, linter, babes, test tooling and much more.</li>
+              <li><a href="https://github.com/axios/axios" target="_blank">Axios: </a> Promise based HTTP client for the browser and node.js.</li>
+            </ul>
             And let's be honest, this is the framework i've been studying for the past months, so this is the best tool in my drawer.
          </p>
       </div>
@@ -71,9 +68,9 @@
           <br>
           <strong>Why PURE CSS?</strong>
           <br>
-          For this project I didn't want to use third party front end frameworks such as <a href="https://vuetifyjs.com/en/" target="_blank">Vuetify</a>, <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="https://materializecss.com/" target="_blank">Materialize</a> nor any other. Despite for my personal projects of course learning  y usually use them to quickstart the styles and focus on other topics.
+          For this project I didn't want to use third party front end frameworks such as <a href="https://vuetifyjs.com/en/" target="_blank">Vuetify</a>, <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="https://materializecss.com/" target="_blank">Materialize</a> nor any other. Despite for my personal projects I usually use them to quickstart the styles and focus on other topics.
           <br>
-          I know that using any kind of CSS processor such as <a href="https://sass-lang.com/" target="_blank">SASS</a>, <a href="http://stylus-lang.com/" target="_blank"> Stylus</a> or <a href="http://lesscss.org/" target="_blank">LESS</a> would have been a +100, but i haven´t got enought experience nor knowledge of this tecnologies to feel confortable creating this project with them, of course this is in my to-do list, and i'm really impacient to start using these technologies.
+          I know that using any kind of CSS processor such as <a href="https://sass-lang.com/" target="_blank">SASS</a>, <a href="http://stylus-lang.com/" target="_blank"> Stylus</a> or <a href="http://lesscss.org/" target="_blank">LESS</a> would have been a +100, but I haven´t got enought experience nor knowledge of this tecnologies to feel confortable creating this project with them, of course this is in my to-do list, and i'm really impacient to start using these technologies.
           </p>
       </div>
     </div>
@@ -130,11 +127,11 @@
         <p>
           <strong>My Solution</strong>
           <br>
-            I was pretty sure about the stack to use, mainly because Vue is a framework that i've been studying recently, it's quite new,
-            i really love to work with it and this would be a great opportunity to test acquired knowledge throught the courses i am doing.
+            I was pretty sure about the stack to use, mainly because Vue is a framework that I've been studying recently, it's quite new,
+            I really love to work with it and this would be a great opportunity to test acquired knowledge throught the courses I am doing.
             <br>
-            I know that not using a CSS procesor will play against me, but i want to emphasize my will and desire to learn these technologies,
-            nonetheless i didn't want to user pre-build front end components, so i stick with plain CSS for all the app, using Flexbox and media querys for responsive designs,
+            I know that not using a CSS procesor will play against me, but I want to emphasize my will and desire to learn these technologies,
+            nonetheless I didn't want to user pre-build front end components, so I stick with plain CSS for all the app, using Flexbox and media querys for responsive designs,
              and Vue's transition directive with simple CSS for animations and transitions.
             <br>
             Style for the grid following (with some changes) the <a href="https://scene.zeplin.io/project/5aba58ec2ad5c9a98d97c76e" target="_blank">zeplin</a>  designs provided.
@@ -143,7 +140,7 @@
             <br>
             I use <a href="https://fontawesome.com/" target="_blank"> Fontaswesome </a>and <a href="https://fonts.google.com/" target="_blank"> Google Fonts</a> for icons, and fonts respectively.
             <br>
-            Filters are dynamic, options are mapped from the data received, so if you introduce a new  transaction with a new currency or type, you'll be able to filter it too.
+            Filters are dynamic, options are mapped from the data received, so if you introduce a new  transaction with a new currency or type, you will be able to filter it too.
             <br>
             Redirecting, if you try to navigate to a route that it is not mapped, you will be redirected to the home page (could have been a Not Foung page)
             <br>
@@ -193,8 +190,8 @@
         <p>
           <strong>Comments</strong>
           <br>
-          When i fisrt saw the challenge i hoped to have enought time to make this solution, and a v2 requesting the info to the server, loading the data in the TransitionGrid component,
-           And sending new requests with params to the server for filtered info. But i won´t have enought time. Please, if this is an issue, let me know and propably in a few days (as i can reuse most of the app) i will elaborate that idea.
+          When I first saw the challenge I hoped to have enought time to make this solution, and a v2 requesting the info to the server, loading the data in the TransitionGrid component,
+           And sending new requests with params to the server for filtered info. But I won´t have enought time. Please, if this is an issue, let me know and propably in a few days (as I can reuse most of the app) I will elaborate that idea.
           </p>
       </div>
     </div>

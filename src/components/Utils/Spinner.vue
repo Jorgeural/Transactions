@@ -22,9 +22,7 @@ export default {
 
 <style scoped>
 .spinner {
-  width: 80%;
-  /* height: 100%; */
-  /* opacity: 0.6; */
+  width: 95%;
   position: absolute;
   z-index: 1200;
   display: flex;
