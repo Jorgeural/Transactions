@@ -1,6 +1,6 @@
 <template>
   <div class="select-style">
-    <select :disabled="disabled" name="selected" v-model="selectedOption">
+    <select :title="title" :disabled="disabled" name="selected" v-model="selectedOption">
       <option value=""><slot name="all-value-label"></slot></option>
       <option v-for="(item, index) in options" :key="index" :value="item">{{ item | capitalize }}</option>
     </select>
@@ -9,7 +9,21 @@
 
 <script>
 export default {
-  props: ['value', 'options', 'disabled'],
+  props: {
+    value: {
+      required: false
+    },
+    options: {
+      required: true,
+      type: Array
+    },
+    disabled: {
+      type: Boolean
+    },
+    title: {
+      type: String
+    }
+  },
   data () {
     return {
       selectedOption: this.value
@@ -44,17 +58,10 @@ export default {
   text-align: center;
   font-weight: 600;
   outline: none;
-  /* -moz-appearance:none;
-  -webkit-appearance:none;
-  appearance: none; */
 }
 
 .select-style select[disabled] {
   color: rgba(0,0,0,.3);
-}
-
-select:hove {
-  background-color: black;
 }
 
 option {

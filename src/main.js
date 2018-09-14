@@ -11,7 +11,11 @@ Vue.config.productionTip = false
 Vue.component('app-select-component', SelectComponent)
 
 Vue.filter('capitalize', (value) => {
-  return value[0].toUpperCase() + value.substring(1)
+  if (typeof (value) === 'string') {
+    return value[0].toUpperCase() + value.substring(1)
+  } else {
+    console.log('"capitalize" Filter only works with strings')
+  }
 })
 
 /* eslint-disable no-new */

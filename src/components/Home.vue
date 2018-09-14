@@ -4,7 +4,7 @@
     <div class="column-center challenge-container bg-2">
       <h1>Frontend Software Engineer Challenge</h1>
       <h2>Rendering transactions</h2>
-      <!-- <router-link tag="a" to="/transactions">Go to solution</router-link> -->
+      <router-link tag="button" class="home-btn" to="/transactions">Go to solution</router-link>
     </div>
 
     <!-- CANDIDATE -->
@@ -199,6 +199,12 @@
       </div>
     </div>
 
+    <div class="column-center bg-2">
+      <div>
+        <router-link tag="button" class="home-btn lg" to="/transactions">Go to solution</router-link>
+      </div>
+    </div>
+
     <!-- Footer -->
     <div class="column-center footer">
       <p>2018 - Made by Jorge Urosa</p>
@@ -229,6 +235,25 @@ a:hover {
   text-decoration: underline;
 }
 
+.home-btn {
+  height: 2.5em;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #3fa8f4;
+  border: 1px solid #3fa8f4;
+  cursor: pointer;
+}
+ .home-btn:hover{
+  color: #213d8f;
+  border: 1px solid #213d8f;
+ }
+
+.home-btn.lg {
+  font-size: 18px;
+  margin: 20px 15px;
+}
+
 .bg-1 {
   background-color: #f2f2f2;
 }
@@ -249,6 +274,10 @@ a:hover {
   min-height: 20vh;
 }
 
+.challenge-container > h1 {
+  margin:0;
+}
+
 .home-headline {
   background-color: #4a4a4a;
   color: #d1d2d4;
@@ -259,7 +288,7 @@ a:hover {
 
 .section-container {
   display: flex;
-  padding: 2.5%;
+  padding: 2%;
 }
 
 .section-container p {

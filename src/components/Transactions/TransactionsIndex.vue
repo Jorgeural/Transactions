@@ -4,12 +4,15 @@
     <div v-if="!getTransactionsRequestError">
       <!-- Filters -->
       <div class="transactions-filters">
-        <app-select-component :options="getTransactionsTypes" v-model="typeFilter">
+        <app-select-component :options="getTransactionsTypes" :title="'Filter by type'" v-model="typeFilter">
           <span slot="all-value-label"> All types</span>
         </app-select-component>
-        <app-select-component :options="getTransactionsCurrencies" v-model="currencyFilter">
+        <app-select-component :options="getTransactionsCurrencies" :title="'Filter by currency'" v-model="currencyFilter">
           <span slot="all-value-label"> All currencies</span>
         </app-select-component>
+        <div class="actions-btns">
+          <i title="Refresh transactions" @click="refreshTransactions" class="fas fa-sync-alt"></i>
+        </div>
       </div>
       <!-- Grid -->
       <div class="transactions-grid">
@@ -50,7 +53,14 @@ export default {
     )
   },
   methods: {
-    ...mapActions(['setTypeFilter', 'setCurrencyFilter'])
+    ...mapActions(['setTypeFilter', 'setCurrencyFilter', 'fetchTransactions']),
+    clearFilters () {
+      this.setTypeFilter('')
+      this.setCurrencyFilter('')
+    },
+    refreshTransactions () {
+      this.fetchTransactions()
+    }
   },
   watch: {
     typeFilter (newValue, oldValue) {
@@ -64,6 +74,20 @@ export default {
 </script>
 
 <style>
+.actions-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #8ec03f;
+}
+
+.actions-btns > i {
+  padding: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
 .transactions-container {
   margin: 0px auto;
   padding: 15px;

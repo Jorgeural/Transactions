@@ -89,7 +89,12 @@ import TransactionsRow from '@/components/Transactions/TransactionsRow'
 import Spinner from '@/components/Utils/Spinner'
 
 export default {
-  props: ['transactions'],
+  props: {
+    transactions: {
+      type: Array,
+      required: true
+    }
+  },
   components: {
     appTransactionsRow: TransactionsRow,
     appSpinner: Spinner
